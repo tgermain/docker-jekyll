@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Copyright (c) 2015, Rentabiliweb Group
 #
 # Permission  to use,  copy, modify,  and/or  distribute this  software for  any
@@ -12,14 +14,12 @@
 # OTHER  TORTIOUS ACTION,  ARISING  OUT OF  OR  IN CONNECTION  WITH  THE USE  OR
 # PERFORMANCE OF THIS SOFTWARE.
 
-FROM rentabiliweb/wheezy:amd64
-MAINTAINER Rentabiliweb Group
+# http://jekyllrb.com/
 
-ENV DEBIAN_FRONTEND noninteractive
+export PATH='/usr/sbin:/sur/bin:/sbin:/bin'
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential nodejs-legacy ruby1.9.1 ruby1.9.1-dev
-RUN gem install jekyll
-RUN curl -sL curl https://www.npmjs.org/install.sh | bash
-
-WORKDIR /srv/jekyll
-EXPOSE 4000
+if [ -d /srv/jekyll ]
+then
+    mkdir -p /srv/jekyll
+fi
+# EOf
