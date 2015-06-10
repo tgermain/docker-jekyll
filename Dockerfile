@@ -12,14 +12,19 @@
 # OTHER  TORTIOUS ACTION,  ARISING  OUT OF  OR  IN CONNECTION  WITH  THE USE  OR
 # PERFORMANCE OF THIS SOFTWARE.
 
+# http://jekyllrb.com/docs/installation/
+
 FROM rentabiliweb/wheezy:amd64
 MAINTAINER Rentabiliweb Group
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential nodejs-legacy ruby1.9.1 ruby1.9.1-dev
+RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential ruby1.9.1 ruby1.9.1-dev
+# get jekyll (http://jekyllrb.com/)
 RUN gem install jekyll
+# get nodejs (https://github.com/nodesource/distributions)
+RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash && apt-get update && apt-get install -y nodejs
+# get npm (https://www.npmjs.com/package/npm)
 RUN curl -sL curl https://www.npmjs.org/install.sh | bash
 
-WORKDIR /srv/jekyll
 EXPOSE 4000
