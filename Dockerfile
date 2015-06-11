@@ -23,11 +23,11 @@ RUN echo 'Europe/Amsterdam' > /etc/timezone && \
     dpkg-reconfigure tzdata
 
 RUN apt-get update && \
-    apt-get upgrade -y \
-    && apt-get install -y \
-       build-essential \
-       ruby1.9.1 \
-       ruby1.9.1-dev
+    apt-get upgrade -y && \
+    apt-get install -y \
+      build-essential \
+      ruby1.9.1 \
+      ruby1.9.1-dev
 
 # get jekyll (http://jekyllrb.com/)
 RUN gem install jekyll
