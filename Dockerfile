@@ -33,7 +33,9 @@ RUN apt-get update && \
 RUN gem install jekyll
 
 # get node.js (http://nodejs.org/)
-RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash && apt-get update && apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash && \
+    apt-get update && \
+    apt-get install -y nodejs
 
 # get npm (http://www.npmjs.com/)
 RUN curl -sL curl https://www.npmjs.org/install.sh | bash
