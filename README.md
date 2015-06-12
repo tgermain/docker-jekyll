@@ -1,5 +1,7 @@
 # docker-jekyll
 
+[![Build Status](https://travis-ci.org/rentabiliweb/docker-jekyll.svg?branch=master)](https://travis-ci.org/rentabiliweb/docker-jekyll)
+
 #### Table of Contents
 
 1. [Overview](#overview)
