@@ -22,6 +22,8 @@ our [Liquid](https://github.com/Shopify/liquid/wiki)  renderer, and spits  out a
 complete,  ready-to-publish  static  website  suitable  for  serving  with  your
 favorite web server.
 
+http://jekyllrb.com/
+
 ## Usage
 
 ```bash
