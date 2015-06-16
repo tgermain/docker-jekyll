@@ -25,7 +25,10 @@ favorite web server.
 ## Usage
 
 ```bash
-$ docker run -v /path/to/bind/from/host:/path/to/bind/in/container:rw rentabiliweb/jekyll bash -c 'cd /path/to/bind/in/container && jekyll build && jekyll serve'
+$ docker run \
+  	 -v /path/to/bind/from/host:/path/to/bind/in/container:rw \
+	 rentabiliweb/jekyll \
+	 bash -c 'cd /path/to/bind/in/container && jekyll build && jekyll serve'
 ```
 
 ## Development
