@@ -11,10 +11,10 @@
 # LOSS OF USE, DATA OR PROFITS,  WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 # OTHER  TORTIOUS ACTION,  ARISING  OUT OF  OR  IN CONNECTION  WITH  THE USE  OR
 # PERFORMANCE OF THIS SOFTWARE.
-
+  
 # http://jekyllrb.com/
 
-FROM rentabiliweb/wheezy:amd64
+FROM rentabiliweb/nodejs
 MAINTAINER Rentabiliweb Group
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -25,20 +25,11 @@ RUN echo 'Europe/Amsterdam' > /etc/timezone && \
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
-      build-essential \
       ruby1.9.1 \
       ruby1.9.1-dev
 
 # get jekyll (http://jekyllrb.com/)
 RUN gem install jekyll
-
-# get node.js (http://nodejs.org/)
-RUN curl -Ls https://deb.nodesource.com/setup_0.12 | bash && \
-    apt-get update && \
-    apt-get install -y nodejs
-
-# get npm (http://www.npmjs.com/)
-RUN curl -Ls curl https://www.npmjs.org/install.sh | bash
 
 EXPOSE 4000
 # EOF
