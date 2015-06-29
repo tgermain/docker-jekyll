@@ -19,9 +19,6 @@ MAINTAINER Rentabiliweb Group
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN echo 'Europe/Amsterdam' > /etc/timezone && \
-    dpkg-reconfigure tzdata
-
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
