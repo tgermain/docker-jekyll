@@ -28,5 +28,9 @@ RUN apt-get update && \
 # get jekyll (http://jekyllrb.com/)
 RUN gem install jekyll
 
+# clean
+RUN find /var/cache/apt -type f -delete && \
+    find /var/lib/apt/lists -type f -delete
+
 EXPOSE 4000
 # EOF
