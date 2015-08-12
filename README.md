@@ -2,7 +2,7 @@
 
 ## Overview
 
-Docker images and builders of Jekyll.
+Docker image of Jekyll.
 
 ## Description
 

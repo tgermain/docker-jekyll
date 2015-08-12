@@ -29,7 +29,11 @@ RUN apt-get update && \
 RUN gem install jekyll
 
 # clean
-RUN find /var/cache/apt -type f -delete && \
+RUN find /usr/share/doc     -type f ! -name copyright -delete && \
+    find /usr/share/i18n    -type f -delete && \
+    find /usr/share/locale  -type f -delete && \
+    find /usr/share/man     -type f -delete && \
+    find /var/cache/apt     -type f -delete && \
     find /var/lib/apt/lists -type f -delete
 
 EXPOSE 4000
