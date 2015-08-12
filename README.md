@@ -1,13 +1,4 @@
-# docker-jekyll
-
-[![Build Status](https://travis-ci.org/rentabiliweb/docker-jekyll.svg?branch=master)](https://travis-ci.org/rentabiliweb/docker-jekyll)
-
-#### Table of Contents
-
-1. [Overview](#overview)
-2. [Description](#description)
-3. [Usage](#usage)
-4. [Development](#development)
+# docker-jekyll ![License badge][license-img] [![Docker badge][docker-img]][docker-url]
 
 ## Overview
 
@@ -37,3 +28,17 @@ $ docker run \
 ## Development
 
 Feel free to contribute on GitHub.
+
+```
+    ╚⊙ ⊙╝
+  ╚═(███)═╝
+ ╚═(███)═╝
+╚═(███)═╝
+ ╚═(███)═╝
+  ╚═(███)═╝
+   ╚═(███)═╝
+```
+
+[license-img]: https://img.shields.io/badge/license-ISC-blue.svg "License"
+[docker-img]: https://img.shields.io/docker/pulls/rentabiliweb/jekyll.svg "Docker"
+[docker-url]: https://registry.hub.docker.com/u/rentabiliweb/jekyll "Docker"
