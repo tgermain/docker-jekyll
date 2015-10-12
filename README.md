@@ -21,7 +21,7 @@ http://jekyllrb.com/
 $ docker run \
   	 --rm \
   	 -v /path/to/bind/from/host:/path/to/bind/in/container:rw \
-	 rentabiliweb/jekyll \
+	 dalenys/jekyll \
 	 bash -c 'cd /path/to/bind/in/container && jekyll build && jekyll serve'
 ```
 
@@ -39,6 +39,6 @@ Feel free to contribute on GitHub.
    ╚═(███)═╝
 ```
 
-[license-img]: https://img.shields.io/badge/license-ISC-blue.svg "License"
-[docker-img]: https://img.shields.io/docker/pulls/rentabiliweb/jekyll.svg "Docker"
-[docker-url]: https://registry.hub.docker.com/u/rentabiliweb/jekyll "Docker"
+[license-img]: https://img.shields.io/badge/license-ISC-blue.svg
+[docker-img]: https://img.shields.io/docker/pulls/dalenys/jekyll.svg
+[docker-url]: https://registry.hub.docker.com/u/dalenys/jekyll
