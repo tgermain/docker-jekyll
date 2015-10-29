@@ -26,7 +26,7 @@ RUN apt-get update && \
       ruby1.9.1-dev
 
 # get jekyll (http://jekyllrb.com/)
-RUN gem install jekyll
+RUN gem install jekyll -v 2.5.3
 
 # clean
 RUN find /usr/share/doc     -type f ! -name copyright -delete && \
